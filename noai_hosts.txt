@@ -654,6 +654,8 @@
 0.0.0.0 songtell.com
 0.0.0.0 prompt-com.com
 0.0.0.0 duolingoguides.com
+0.0.0.0 gemini.google.com
+0.0.0.0 grok.com
 
 
 # [.art sites]
@@ -1474,6 +1476,7 @@
 0.0.0.0 www.gab.ai
 0.0.0.0 www.mascots.ai
 0.0.0.0 www.mistral.ai
+0.0.0.0 chat.mistral.ai
 0.0.0.0 www.loverse.ai
 0.0.0.0 www.typli.ai
 0.0.0.0 www.yeschat.ai
@@ -2265,3 +2268,4 @@
 0.0.0.0 www.homediningkitchen.com
 0.0.0.0 www.psichologyanswers.com
 0.0.0.0 www.umatechnology.org
+
