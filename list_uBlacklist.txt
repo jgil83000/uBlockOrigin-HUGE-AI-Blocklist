@@ -354,6 +354,9 @@
 *://*.typli.ai/*
 *://*.yeschat.ai/*
 *://*.boodlebox.ai/*
+*://*.Sunoai.ai/*
+*://*.thetawise.ai/*
+*://*.imagineanything.ai/*
 
 
 # Sites that have .com domain extension
@@ -672,8 +675,19 @@
 *://*.aipromptsdirectory.com/*
 *://*.songtell.com/*
 *://*.prompt-com.com/*
+*://*.peopleai.com/*
+*://*.airportcalgary.com/*
+*://*.dogbreedadvice.com/*
 *://*.duolingoguides.com/*
-
+*://*.deepseek.com/*
+*://*.drawatoon.com/*
+*://*.suno.com/*
+*://*.buddhaweekly.com/*
+*://*.softhandtech.com/*
+*://*.netwrck.com/*
+*://*.civitaiarchive.com/*
+*://*.deepwiki.com/*
+*://*.civarchive.com/*
 
 # Sites that have .art domain extension
 *://*.imagine.art/*
@@ -818,6 +832,7 @@
 *://*.heatware.net/*
 *://*.bigshadows.net/*
 *://*.eyecandy.net/*
+*://*.jeddahairport.net/*
 
 
 # Sites that have miscellaneous domain extensions (.pub, .io, .cc, et cetera)
@@ -979,7 +994,10 @@
 *://*.groundabout.coffee/*
 *://*.igot.coffee/*
 *://*.manuals.plus/*
-
+*://*.scpa.education/*
+*://*.sunoai.asia/*
+*://*.diffus.me/*
+*://*.deepwiki.org/*
 
 # AI projects hosted on other sites
 *://*.canva.com/ai-art-generator/*
@@ -1172,6 +1190,7 @@
 *://*.ai-nudes.ai/*
 *://*.undress.xxx/*
 *://*.girlfriend.ai/*
+*://*.clothoff.net/*
 
 
 # //// Block lists of individual users

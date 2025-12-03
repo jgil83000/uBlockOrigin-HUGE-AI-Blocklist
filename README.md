@@ -3,10 +3,7 @@ A huge blocklist of manually curated sites (1000+) that contain AI generated con
 
 Also works on mobile ([iOS, iPadOS,](#iOS-iPadOS-Safari-only) [Android](#Android-via-Firefox)) via uBlacklist, as well as pihole/adguard (via [Hosts file](#hosts-file-for-pi-holeadguard))
 
-> [!WARNING]  
-> Right now, please use [uBlacklist](#Installing-it-with-uBlacklist) *instead* of uBlock Origin for now. Needs a little restructuring to fix DOM targeting. You can still try uBlock, but it will probably not work as you expect it to...
-
-## Installing the blocklist for for PC/Desktop 
+## PC/Desktop installation
 
 ### Installing it with uBlock Origin
 
@@ -35,9 +32,7 @@ https://raw.githubusercontent.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist/main/
 <summary>Here's a video guide on how to do this (click the dropdown to expand) </summary>
 <br>
 
-
-https://github.com/user-attachments/assets/e254b73e-0c4c-4f7d-a34b-f70b8e437356
-
+https://github.com/user-attachments/assets/c379a750-53eb-4813-8cea-757f34ab5a2d
 
 </details>
 
@@ -47,8 +42,9 @@ https://github.com/user-attachments/assets/e254b73e-0c4c-4f7d-a34b-f70b8e437356
 
 
 > [!IMPORTANT]
-> If you find that your imported list isn't working, it may be due to an outdated web browsing session. If you haven't restarted your web browser for a long time, there's a chance the session won't update how it should. This means importing the list into uBlock Origin or uBlacklist won't function correctly.
-> Try creating a new session, aka closing <ins>**all**</ins> web browser windows, waiting until all processes are fully closed (4-5 second wait), then re-opening your web browser. That should help. If not, then try clearing your browser's cache.
+> If you find that your imported list isn't working, it may be due to an outdated web browsing session. If you haven't restarted your web browser for a long time, there's a chance the session won't update how it should, meaning importing the list into uBlock Origin or uBlacklist won't function correctly. Try creating a new session by closing <ins>**all**</ins> web browser windows, waiting until all processes are fully closed (4-5 second wait), then re-opening your web browser. That should help; if not, then try clearing your browser's cache.
+
+***
 
 ### Installing it with uBlacklist
 
@@ -62,7 +58,7 @@ If you use Google Chrome/Chromium and have [uBlacklist installed](https://chrome
 
 2. Click on your extensions list, select uBlacklist, then click on the "options" text, highlighted in blue.
 
-3. Enable the **Other search engines**, and click on the search engine(s) you want this list to work on. A list of compatible search engines (with images support) is [here.](https://github.com/iorate/ublacklist?tab=readme-ov-file#supported-search-engines)
+3. Enable other search engines by clicking on the 'Other search engines/SERPINFO' button, and click on the search engines you want this list to work on. A list of compatible search engines (with images support) is linked [here.](https://github.com/iorate/ublacklist?tab=readme-ov-file#supported-search-engines)
 
 4. Scroll all the way down until you see the "Subscription" tab, and click on the blue "Add a subscription" button.
 
@@ -76,7 +72,7 @@ into the **URL** part of the dialogue box, then press the blue **Add** button.
 
 7. Set the update interval to an hour for near-realtime list updates, and you're done!
 
-## Installing the blocklist for mobile (iOS, iPadOS & Android)
+## Mobile installation (iOS, iPadOS & Android)
 
 ### iOS, iPadOS (Safari only)
 
@@ -150,7 +146,7 @@ https://raw.githubusercontent.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist/main/
 
 3. Click on your extensions list, select uBlacklist, then click on the "options" text, highlighted in blue.
 
-4. Enable the **Other search engines**, and click on the search engine(s) you want this list to work on. A list of compatible search engines (with images support) is [here.](https://github.com/iorate/ublacklist?tab=readme-ov-file#supported-search-engines)
+4. Enable other search engines by clicking on the 'Other search engines/SERPINFO' button, and click on the search engine(s) you want this list to work on. A list of compatible search engines (with images support) is [here.](https://github.com/iorate/ublacklist?tab=readme-ov-file#supported-search-engines)
 
 5. Scroll all the way down until you see the "Subscription" tab, and click on the blue "Add a subscription" button.
 
@@ -165,7 +161,6 @@ into the **URL** part of the dialogue box, then press the blue **Add** button.
 7. Set the update interval to an hour for near-realtime list updates, and you're done!
 
 </details>
-
 
 
 ## Hosts file for pi-hole/adguard
@@ -223,7 +218,7 @@ https://raw.githubusercontent.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist/main/
 </details>
 
 ## Allowlisting sites
-Don't like a website being blocked? You can easily create an allowlist in your own personal uBlock Origin or uBlacklist filter list. 
+Don't like a certain site being blocked? You can easily create an allowlist in your own personal uBlock Origin or uBlacklist filter list. 
 
 Here's how to do it. 
 
@@ -240,7 +235,7 @@ Boom! Now it's allowlisted!
 
 Or, if you don't want to go through that mumbo-jumbo, add this line in your filter list: 
 ```
-#@#a[href*="example.com"]:upward(div):style(opacity:0.00!important;)
+#@#a[href*="example.com"]:upward(li):remove()
 ```
 
 Change "example.com" to the URL you want to allowlist. Copy & paste that in uBlock Origin's "My filters" list, and you're set!
@@ -264,7 +259,7 @@ Change "example.com" to the URL you want to allowlist. Copy & paste that in uBlo
 
 ## Extended Filtering
 
-It is possible to filter AI results based on keywords. It was originally in the list, but it's been taken out to make it configurable and/or optional (since it is a blanket ruling that doesn't care about context).
+It is possible to filter AI results based on keywords. It was originally in the list, but it's been taken out to make it configurable and/or optional.
 
 ### uBlock Origin
 In your personal filter list, you can use this template to add your own keywords you would like to block.
@@ -315,14 +310,10 @@ Below is a small list of **optional** regular expressions that can be used to fi
 ```
 </details>
 
-  
-## What's the difference between uBlock Origin and uBlacklist anyway?
-Currently uBlacklist has an issue with pagination on Google Images. This means that if too many AI images are blocked on a single page, you won't be able to scroll further down to load more. This is rare, although it can happen. 
+## Contributing
+If you'd like to contribute to the list, feel free to clone this repo and create a pull request for the site(s) you'd like to add to the list. Make sure to update all files (including hosts file) wherever necesessary (except the nuclear list if you want the site to appear in the main list of course).
 
-uBlock Origin does not have this issue since it is only changing the opacity of the divs instead of blocking them, although this makes image search look a little strange since there will be gaps where the images are "blocked."
-
-If uBlock Origin doesn't work, try uBlacklist (and vise versa). Try out each of them and see which one works better for you! :)
-
+If you don't know how to do that or don't want to, you can instead create an issue of the site that you'd like to be included in the list, wherein I'd look over it and add it in myself. Any way that you contribute is greatly appreciated!
 
 ## To Do
 - [x] Provide blocklist for uBlacklist compatibility
