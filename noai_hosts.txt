@@ -670,6 +670,7 @@
 0.0.0.0 civitaiarchive.com
 0.0.0.0 civarchive.com
 0.0.0.0 api.individual.githubcopilot.com
+0.0.0.0 search.brave.com
 
 
 # [.art sites]
@@ -2305,6 +2306,7 @@
 0.0.0.0 www.homediningkitchen.com
 0.0.0.0 www.psichologyanswers.com
 0.0.0.0 www.umatechnology.org
+
 
 
 
